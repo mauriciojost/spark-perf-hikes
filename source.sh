@@ -52,7 +52,7 @@ function spark-run-local() {
   spark-init-datasets-local
   spark-local-check-version $version
   ph_log_info "script: $script, spark-shell ${args}"
-  cat $script - | eval spark-shell ${args}
+  (echo ":paste"; cat $script; echo ""; cat -) | eval spark-shell ${args}
 }
 
 function spark-import-databricks() {

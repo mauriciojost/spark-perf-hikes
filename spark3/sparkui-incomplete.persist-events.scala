@@ -31,7 +31,7 @@ Some solutions:
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.scheduler._
-import spark.implicits._
+//import spark.implicits._
 
 val spark: SparkSession = SparkSession.active
 

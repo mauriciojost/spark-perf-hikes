@@ -65,7 +65,7 @@ import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.Column
 
 val spark: SparkSession = SparkSession.active
-import spark.implicits._
+//import spark.implicits._
 
 val tmpPath = "/tmp/perf-hikes/sandbox/" + UUID.randomUUID()
 val delta = tmpPath + "/delta"

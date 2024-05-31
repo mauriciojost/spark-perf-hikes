@@ -67,7 +67,7 @@ val probeDir = tmpPath + "/input"
 val buildDir = tmpPath + "/employee"
 
 val spark: SparkSession = SparkSession.active
-import spark.implicits._
+//import spark.implicits._
 
 // COMMAND ----------
 
